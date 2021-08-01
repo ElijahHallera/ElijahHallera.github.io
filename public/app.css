@@ -37,6 +37,22 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
+.centered2{
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  bottom: 50%;
+  transform: translate(-50%, -50%, -50%);
+}
+
+.centered3{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%, -50%);
+}
+
 .borderlines{
   border-top-style: solid;
   border-top-color: black;
@@ -50,7 +66,7 @@ h2 {
 }
 
 .button:hover {
-  background-color: black; /* Green */
+  background-color: black;
   color: white;
 }
 
@@ -59,4 +75,11 @@ h2 {
   width: 25px;
   height: auto;
   text-align: center;
+}
+
+.linkedIcon{
+  padding-top: 15px;
+  width: 25px;
+  height: auto;
+  text-align: center; 
 }
