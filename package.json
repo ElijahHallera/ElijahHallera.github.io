@@ -4,6 +4,7 @@
   "description": "My personal website to hopefully put on resume",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Elijah Hallera",
@@ -12,5 +13,8 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
