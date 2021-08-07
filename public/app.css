@@ -1,34 +1,94 @@
-body, html {
-    height: 100%;
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.bg {
-  background-image: url("images/indieforest.jpg");
-  height: 100%;
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+header{
   width: 100%;
-  background-position: center;
+  height: 100vh;
+  background-image: url("images/prog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-nav {
-    padding-top: 25px;
-    text-align: center;
+h1{
+  text-align: center;
+  color: #9A2A2A;
 }
 
 h3{
-    color: black;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
+  text-align: center;
 }
 
-h2 {
-    text-align: center;
-    font-style: italic;
-    font-size: 30px;
-    color: black;
-    opacity: 75%;
+h4{
+  text-align: center;
+  font-style: italic;
+}
+
+p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+
+nav a:hover{
+  color: white;
+  text-decoration: none;
+  font-size: 1.25em;
+  transition: 1s;
+}
+
+nav ul{
+  list-style: none;
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+}
+
+nav.black ul{
+  background: #000;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #9A2A2A;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a.Logo{
+  color: #9A2A2A;
+  text-decoration: none;
+}
+
+hr{
+  position: relative;
+  width: 50%;
+  height: 3px
 }
 
 .centered{
@@ -38,33 +98,68 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
-.borderlines{
-  border-top-style: solid;
-  border-top-color: black;
-  border-bottom-style: solid;
-  border-bottom-color: black;   
-}
-
-.button {
-  transition-duration: 0.4s;
-  border: 1px outset black;
-}
-
-.button:hover {
-  background-color: black;
-  color: white;
+.content{
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
 }
 
 .gitIcon{
   padding-top: 15px;
   width: 25px;
   height: auto;
-  text-align: center;
+  text-align: centered;
 }
 
 .linkedIcon{
   padding-top: 15px;
   width: 25px;
   height: auto;
-  text-align: center; 
+  text-align: centered; 
 }
+
+.profilePicture{
+  position: center;
+  height: 50%;
+  width: 50%;
+}
+
+.websiteLogo{
+  position: fixed;
+  float: left;
+  color: white;
+  margin: 18px 36px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.row{
+  margin: 20px auto;
+  width:400px;
+  height:400px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.column{
+    background-color: black;
+    padding:20px;
+    border-radius:10px;
+    color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-family:sans-serif;
+  }
+  
+  .resume{
+    text-align: center;
+    padding-top: 10px;
+  }
