@@ -1,119 +1,154 @@
 <%- include ('partials/header'); -%>
 
-<!--
+<!-- Navigation Section Start -->
+<!--<section id="navigation">-->
+<!--	<div class="header container">-->
+<!--		<div class="navigation-bar">-->
+<!--			<div class="brand">-->
+<!--				<a href="#landing"><h1>Elijah Hallera</h1></a>-->
+<!--			</div>-->
+<!--			<div class="navigation-list">-->
+<!--				<div-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</section>-->
+<!-- Navigation Section Ending -->
 
-<div class="bg">
-	<div class="centered">
-		
-		<div class="borderlines">
-			<h3> Elijah Hallera </h3>
-			<h2> Software Developer/Engineer</h2>
-		</div>
-		
-		<nav> 
-			<a href= "/"> <button class="button btn btn-default"> Home </button></a>
-			<a href= "/about"> <button class="button btn btn-default"> About </button></a> 
-			<a href= "/projects"> <button class="button btn btn-default"> Projects </button></a>
-			<a href= "/contact"><button class="button btn btn-default"> Contact </button></a>
-			</br>
-			<a href="https://github.com/ElijahHallera"> <img class="gitIcon" src="images/git2.png"></a>
-			<a href="https://www.linkedin.com/in/elijah-hallera-892278199/"><img class="linkedIcon" src="images/LinkedInLogo.png"></a>
-		</nav>
-	</div>
-	
-</div>
+<!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+	        <div class="nav-list">
+		          <div class="hamburger">
+		            <div class="bar"></div>
+		          </div>
+		          <ul>
+		            <li><a href="#landing" data-after="Home">Home</a></li>
+		            <li><a href="#about" data-after="About">About</a></li>
+		            <li><a href="#projects" data-after="Projects">Projects</a></li>
+		            <li><a href="#contact" data-after="Contact">Contact</a></li>
+		          </ul>
+	        	</div>
+    	</div>
+    </div>
+  </section>
+  <!-- End Header -->
 
--->
-
-<!-- NEW TEMPLATE FOR WEBSITE -->
-<div class="wrapper" id="home">
-
-	<!-- Navigation Bar ---->
-	<div class="overlay">
-		<nav>
-			<div class="menu" id="leftMenu">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-				</ul>	
-			</div>
-			<div class="menu" id="rightMenu">
-				<ul>
-					<li><a href="#contact">Contact: </a></li>
-					<li><a href="https://github.com/ElijahHallera">Github </a></li>
-					<li><a href="https://www.linkedin.com/in/elijah-hallera-892278199/">LinkedIn </a></li>
-					<li><a href="">Email </a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-		
-	
-	<div id="about" class="container">
-		</br>
-		</br>
-		<div class="content">
-			<h1>Elijah Hallera</h1>
-			<h4>Software Engineer | Computer Science Student </h4>
-			<hr>
-		</div>
+<!-- Landing Section Start -->
+<section id = "landing">
+	<div class="landing container">
 		<div>
-			<h2>About Me</h2>
-			<p>I'm a Bellevue-based software engineer who is experienced in building and designing both website and mobile applications.</p>
-			<p>Currently, I am a computer science student at California State University, Monterey Bay.</p>
+				<h1>Hello, <span></span></h1>
+				<h1>My name is <span></span></h1>
+				<h1>Elijah <span></span></h1>
+				<!-- call to action = cta -->
+				<a href="#" type="button" class="cta">Portfolio</a>
+			</div>
 		</div>
-	</div>
-	
-	<div id="projects">
+	</section>
+<!-- Landing Section Ending -->
+
+<!-- About Me Section Start -->
+<section id="about">
+	<div class="about container">
+		<div class="col-left">
+			<div class="about-img">
+				<img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201802/portfolio.jpeg?FiDuEq_3VnAh8wxpLykw3aWI.eIslcbH" style="width: 400px, height: 400px;">
+			</div>
+		</div>
 		</br>
-		<div class="content">
-			<h1>Projects</h1>
-		</div>
-		<div class="row">
-			<div class="column"> A </div>
-			<div class="column"> B </div>
-			<div class="column"> A </div>
-			<div class="column"> B </div>
-		</div>
-		<div class="row">
-			<div class="column"> A </div>
-			<div class="column"> B </div>
-			<div class="column"> A </div>
-			<div class="column"> B </div>
-		</div>
-	</div>
-	
-	</br>
-	<div id="resume">
-		</br>
-		<div class="content">
-			<h1>Resume</h1>
+		<div class="col-right">
+			<h1 class="section-title"> About Me</h1>
+			<h2>Software Engineer</h2>
+			<p> Green vines attached to the trunk of the tree had wound themselves toward the top of the canopy. 
+			Ants used the vine as their private highway, avoiding all the creases and crags of the bark, to freely move at top speed from top to bottom or bottom to top depending on their current chore. 
+			At least this was the way it was supposed to be. Something had damaged the vine overnight halfway up the tree leaving a gap in the once pristine ant highway. </p>
+			<a href="#" class="cta">Download Resume</a>
 		</div>
 		
-		<div class="container p-2 my-2 border">
-			<div class="resume">
-				<a href="https://docs.google.com/document/d/1NkaWLLU5wqK2roYRNF0tDCAEND9lEf8QKTqOV8ZoVJM/edit?usp=sharing">
-					<img width="300" src="https://lh5.googleusercontent.com/Z8Z4eFZMm32tGyQjFLIYew8n9T3HJHBd7N1wVpJSWalG8NgBfVEjIIaFw1t0hW2RI-zWeegPzQ=w1200-h630-p">
-				</a>
-			</div>	
+	</div>
+</section>
+<!-- About Me Section Ending -->
+
+<!-- Project Section Start -->
+<section id="projects">
+	<div class="projects container">
+		<div class="projects-header">
+			<h1 class="section-title">Recent Projects</h1>
+		</div>
+		<div class="all-projects">
+			<div class="project-item">
+				<div class="project-information">
+					<h1>Project 1</h1>
+					<h2>Coding is Love</h2>
+					<p>Hello this is  a paragraph</p>
+				</div>
+				<div class="project-image">
+					<img src="https://smalltotall.info/wp-content/uploads/2017/04/google-favicon-vector-400x400.png" alt="image">
+				</div>
+			</div>
+			<div class="project-item">
+				<div class="project-information">
+					<h1>Project 2</h1>
+					<h2>Coding is Love</h2>
+					<p>Hello this is  a paragraph</p>
+				</div>
+				<div class="project-image">
+					<img src="https://smalltotall.info/wp-content/uploads/2017/04/google-favicon-vector-400x400.png" alt="image">
+				</div>
+			</div>
+			<div class="project-item">
+				<div class="project-information">
+					<h1>Project 3</h1>
+					<h2>Coding is Love</h2>
+					<p>Hello this is  a paragraph</p>
+				</div>
+				<div class="project-image">
+					<img src="https://smalltotall.info/wp-content/uploads/2017/04/google-favicon-vector-400x400.png" alt="image">
+				</div>
+			</div>
+			<div class="project-item">
+				<div class="project-information">
+					<h1>Project 4</h1>
+					<h2>Coding is Love</h2>
+					<p>Hello this is  a paragraph</p>
+				</div>
+				<div class="project-image">
+					<img src="https://smalltotall.info/wp-content/uploads/2017/04/google-favicon-vector-400x400.png" alt="image">
+				</div>
+			</div>
 		</div>
 	</div>
-	
-	</br>
-	<div id="contact">
-		</br>
-		<div class="content">
-			<h1>Contact</h1>
+</section>
+<!-- Project Section Ending -->
+
+<!-- Contact Section Starting -->
+<section id="contact">
+	<div class="contact container">
+		<div><h1 class="section-title">Contact Information</h1></div>
+		<div class="contact-items">
+			<div class="contact-item">
+				<!--<div class="icon"><i class="fa fa-linkedin" style="color: rgb(180, 181, 209);"></i></div>-->
+				<div class="icon"><img src="https://smalltotall.info/wp-content/uploads/2017/04/google-favicon-vector-400x400.png" width="70px" height="70px"></div>
+				<div class="contact-info">
+					<h1>Github</h1>
+					<h2>+1 206 794 6000</h2>
+					<h2>+1 206 794 6000</h2>
+				</div>
+			</div>
+			<div class="contact-item">
+				<!--<div class="icon"><i class="fa fa-linkedin" style="color: rgb(180, 181, 209);"></i></div>-->
+				<div class="icon"><img src="https://smalltotall.info/wp-content/uploads/2017/04/google-favicon-vector-400x400.png" width="70px" height="70px"></div>
+				<div class="contact-info">
+					<h1>LinkedIn</h1>
+					<h2>+1 206 794 6000</h2>
+					<h2>+1 206 794 6000</h2>
+				</div>
+			</div>
 		</div>
 	</div>
-	
-	<div class="centered">
-		</br>
-		<a href="https://github.com/ElijahHallera"> <img class="gitIcon" src="images/git2.png"></a>
-		<a href="https://www.linkedin.com/in/elijah-hallera-892278199/"><img class="linkedIcon" src="images/LinkedInLogo.png"></a>	
-	</div>
-	</br>
-	</br>
-	
-</div>
+</section>
+<!-- Contact Section Ending -->
+
+<%- include ('partials/footer'); -%>
