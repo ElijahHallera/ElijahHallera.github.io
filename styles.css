@@ -1,0 +1,367 @@
+/* ================================================== */
+/* ================== WEB PAGE CSS ================== */
+/* ================================================== */ 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow-y: scroll;
+}
+
+h2 {
+    text-align: center;
+    color: #D6B65D;
+}
+
+a {
+    color: #D6B65D;
+    text-decoration: none;
+}
+
+#experience {
+    text-align: center;
+    color: #D6B65D;
+}
+
+/* ================================================== */
+/* ================== LANDING SECTION CSS ========== */
+/* ================================================== */ 
+#landing-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.landing-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.landing-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #D6B65D;
+    text-align: center;
+    z-index: 10;
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 100px;
+}
+
+.landing-box h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.landing-box p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* ================================================== */
+/* ============ LEFT AND RIGHT COLUMN CSS =========== */
+/* ================================================== */ 
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#left-column,
+#right-column {
+    width: 45%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#left-column {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1000; 
+}
+
+.RC-content {
+    min-height: 25vh;
+    padding: 15px;
+}
+
+/* ================================================== */
+/* =========== BOLD AND ENLARGING TEXT CSS ========== */
+/* ================================================== */ 
+.bold {
+    font-weight: bold;
+}
+
+.large {
+    font-size: 1.2em;
+    transition: font-size 0.3s ease;
+}
+
+/* ================================================== */
+/* ================== TOP PAGE CSS ================== */
+/* ================================================== */ 
+.top-bar {
+    background-color: #222;
+    color: #D6B65D;
+    padding: 25px 20px;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #D6B65D;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.initials {
+    font-size: 24px;
+    margin-right: auto;
+}
+
+.initial-e {
+    color: #D6B65D;
+    font-weight: bold;
+}
+
+.initial-h {
+    color: #D6B65D;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.resume-button {
+    background-color: #D6B65D;
+    color: #000;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #b57c31;
+    color: #fff;
+}
+
+/* ================================================== */
+/* ============ EXPERIENCE SECTION CSS ============== */
+/* ================================================== */ 
+.job {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.job:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.job h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.job ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.job ul li {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.tech-badges {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    background-color: #D6B65D;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.badge:hover {
+    background-color: #B79B56;
+}
+
+/* ================================================== */
+/* ================= CAROUSEL CSS =================== */
+/* ================================================== */ 
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+}
+
+.carousel-container:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.carousel-item h3 {
+    margin: 10px 0;
+}
+
+.carousel-item p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 0px;
+}
+
+.next-btn {
+    right: 0px;
+}
+
+/* ================================================== */
+/* ================== FOOTER CSS ==================== */
+/* ================================================== */ 
+footer{
+    text-align: center;
+    border-top: 2px solid #b5b5b5;
+}
+
+/* ================================================== */
+/* ============= RESONSIVE SCREEN SIZE ============== */
+/* ================================================== */ 
+@media (max-width: 1024px) {
+    #left-column,
+    #right-column {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #landing-section {
+        padding: 100px 10px;
+    }
+
+    #main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .RC-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #landing-section {
+        padding: 50px 10px;
+    }
+
+    .landing-box {
+        max-width: 100%;
+    }
+
+    #left-column,
+    #right-column {
+        width: 100%;
+        padding: 5px;
+    }
+}
